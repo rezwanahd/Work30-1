@@ -1,0 +1,150 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* Header Navbar */
+.navbar-brand span {
+    display: inline-block;
+    font-size: 28px;
+    background: #6278df;
+    color: #fff;
+    padding: 2px 13px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.header-top .navbar-brand {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* Slider Section */
+
+.slider-section{
+    background: url("img/mbr-10.jpg") no-repeat center center;
+    padding: 200px 0 ;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+
+.slider-caption h4 {
+    margin-bottom: 20px;
+}
+.slider-caption h2 {
+    margin-bottom: 45px;
+    font-size: 44px;
+    font-weight: 500;
+}
+.slider-caption .btn {
+    padding: 12px 65px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: #5ba533;
+}
+.slider-caption .form-control {
+    padding: 15px;
+}
+
+/* Counter Section */
+
+.counter-items .h2 {
+    font-size: 55px;
+}
+.counter-items .text-muted{
+    font-size: 20px;
+
+}
+
+/* About-Section */
+
+.about-section{
+    background: #f7f9ff;
+}
+.about-text-left{
+    margin-top: 120px;
+}
+.about-text-left .lead {
+    font-size: 23px;
+    line-height: 2.3rem;
+}
+
+/* Features-Section */
+
+.features-text{}
+
+.features-text h1{
+    font-size: 44px;
+    font-weight: 400;
+}
+.features-text p {
+    font-size: 24px;
+    margin-top: 24px;
+}
+.features-item {
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+
+.left-img-sec {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.left-img-sec img {
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -100px;
+}
+
+
+.left-text-sec {
+    width: 60%;
+    padding: 18px;
+}
+
+/* Portfolio Section */
+
+.portfolio-item{}
+.portfolio-item a{
+    display: block;
+    position: relative;
+}
+.portfolio-item a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(98, 120, 223, .6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.portfolio-item:hover a::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+
